@@ -52,7 +52,7 @@ The product revenue analysis identified the top 10 entries based on total revenu
 
 ### Business Interpretation
 
-Several merchandise products contributed significantly to overall
+Several merchandise products contributed significantly to overall revenue, particularly REGENCY CAKESTAND 3 TIER and WHITE HANGING HEART T-LIGHT HOLDER. However, the top 10 revenue ranking also included service-related entries such as Manual and postage charges. Therefore, merchandise performance should be evaluated separately from service-related transactions to better understand actual product demand.
 
 ### Comparison: Product Revenue vs. Quantity Sold
 
@@ -137,7 +137,7 @@ The geographic analysis examined revenue, invoice volume, and items sold across 
 
 ### Key Findings
 
-- **Largest Market:** The United Kingdom generated £17,870,977.76, representing approximately 85.21% of total revenue.
+- **Largest Market:** The United Kingdom generated £17,897,977.76, representing approximately 85.34% of total revenue.
 - **Invoice Contribution:** The UK accounted for 36,535 invoices, approximately 91.16% of all invoices.
 - **Other Major Markets:** EIRE, the Netherlands, Germany, and France were the next four largest markets by revenue.
 - **International Reach:** The business recorded sales across multiple international markets.
