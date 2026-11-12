@@ -1,49 +1,84 @@
-# Online Retail Sales Analysis (SQL)
+# Online Retail Sales Analysis (PostgreSQL & Power BI)
 
 ## Project Overview
-This project analyzes an online retail dataset using PostgreSQL to explore sales performance, product trends, customer behavior, and geographic patterns.
 
-The goal is to use SQL to extract meaningful business insights and demonstrate practical data analysis skills.
+This project analyzes the Online Retail II dataset using PostgreSQL and Power BI to evaluate sales performance, product trends, customer behavior, and geographic patterns.
+
+The goal is to transform raw retail transaction data into meaningful business insights through SQL querying, data cleaning, exploratory analysis, and interactive data visualization.
 
 ## Dataset
+
 - **Source:** [UCI Machine Learning Repository – Online Retail II](https://archive.ics.uci.edu/dataset/502/online+retail+ii)
 - **Time Period:** December 2009 – December 2011
-- **Total Records:** 1,067,371
+- **Original Records:** 1,067,371
 - **Unique Invoices:** 53,628
 - **Unique Products:** 5,305
 - **Unique Customers:** 5,942 (excluding missing customer IDs)
 - **Countries:** 43
 
 ## Tools & Technologies
-- PostgreSQL 18
-- pgAdmin 4
-- SQL
 
-## Analysis Plan
-1. Dataset overview and exploration
-2. Data quality checks and missing values
-3. Data cleaning and preparation
-4. Sales and revenue analysis
-5. Product performance analysis
-6. Customer behavior analysis
-7. Geographic sales analysis
-8. Business insights and recommendations
+- **PostgreSQL 18** – Data cleaning, querying, and analysis
+- **pgAdmin 4** – Database management and SQL execution
+- **Power BI** – Sales dashboard and data visualization
+- **Microsoft Excel / CSV** – Data storage and export
+
+## Data Cleaning
+
+The original dataset was cleaned to prepare it for sales analysis.
+
+- Excluded transactions with zero or negative quantities.
+- Excluded transactions with zero or negative prices.
+- Excluded cancellation invoices beginning with "C".
+- Created a cleaned sales view (`clean_sales`) for analysis.
+
+After cleaning, the dataset contained **1,041,652 records**.
+
+## Key Business Metrics
+
+Based on the cleaned dataset:
+
+| Metric | Result |
+|---|---:|
+| Total Revenue | £20,972,594.55 |
+| Total Items Sold | 11,420,287 |
+| Unique Invoices | 40,077 |
+| Average Order Value | £523.31 |
+| Countries | 43 |
+
+## Analysis Areas
+
+1. Overall sales performance
+2. Monthly sales trends
+3. Product performance and revenue contribution
+4. Customer behavior and purchasing frequency
+5. Geographic sales analysis
+6. Customer and revenue concentration
+7. Business insights and recommendations
+
+## Power BI Dashboard
+
+The interactive sales dashboard presents:
+
+- Total revenue
+- Total invoices
+- Total items sold
+- Monthly sales revenue trends
+- Monthly invoice trends
+- Monthly items sold trends
+
+A PDF export of the dashboard is included in this repository.
 
 ## Project Structure
-- `README.md` – Project overview and summary
-- `PROJECT_NOTES.md` – Detailed analysis notes and interpretations
-- `retail_analysis.sql` – SQL queries used throughout the project
-- `data/` – Original dataset files
 
-## Current Progress
-- [x] Imported both dataset files into PostgreSQL
-- [x] Combined both years into one view
-- [x] Completed initial dataset overview
-- [x] Identified the dataset date range
-- [ ] Check missing values
-- [ ] Perform data cleaning
-- [ ] Analyze sales and revenue
-- [ ] Identify key business insights
+- `README.md` – Project overview, methodology, and key metrics
+- `retail_analysis.sql` – SQL queries used throughout the analysis
+- `monthly_sales.csv` – Monthly sales data exported from PostgreSQL for Power BI
+- `Online_Retail_Sales_Dashboard.pdf` – Power BI dashboard export
+- `business_insights.md` – Detailed findings, interpretations, and business recommendations
 
-## Expected Outcome
-Develop practical SQL skills and create a portfolio project that demonstrates the ability to explore, clean, analyze, and interpret real-world retail data.
+## Conclusion
+
+This project demonstrates practical data analytics skills, including SQL data cleaning, exploratory data analysis, business performance evaluation, and data visualization.
+
+The findings provide insights into sales trends, customer purchasing behavior, product performance, and geographic revenue distribution. These insights can help support business decisions related to customer retention, inventory management, and market expansion.
